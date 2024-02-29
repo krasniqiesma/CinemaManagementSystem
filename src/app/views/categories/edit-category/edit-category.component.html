@@ -1,7 +1,7 @@
 <div class="edit-category-form">
-    <form [formGroup]="editCategoryForm" (onSubmit)="onSubmit()">
+    <form [formGroup]="editCategoryForm" (ngSubmit)="onSubmit()">
         <div class="form-group">
-            <label for="title">Title:</label>
+            <label for="categoryTitle">Title:</label>
             <input type="text" id="title" formControlName="title" required>
             <div *ngIf="editCategoryForm.get('title').touched && editCategoryForm.get('title').errors">
                 <small class="text-danger" *ngIf="editCategoryForm.get('title').errors['required']">
@@ -9,7 +9,6 @@
                 </small>
             </div>
         </div>
-
-        <button type="submit" class="btn btn-primary" [disabled]="!editCategoryForm.valid">Edit Category</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!editCategoryForm.valid">Update Category</button>
     </form>
-</div>
+  </div>

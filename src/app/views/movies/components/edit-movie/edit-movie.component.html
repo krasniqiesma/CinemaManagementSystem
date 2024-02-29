@@ -37,8 +37,8 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="shortSynopsis">Short Synopsus:</label>
-            <input type="text" id="shortSynopsis" formControlName="shortSynopsis" required>
+            <label for="shortSynopsis">Short Synopsis:</label>
+            <textarea id="shortSynopsis" class="text-area" formControlName="shortSynopsis" rows="3" required></textarea>
             <div *ngIf="editMovieForm.get('shortSynopsis').touched && editMovieForm.get('shortSynopsis').errors">
                 <small class="text-danger" *ngIf="editMovieForm.get('shortSynopsis').errors['required']">
                     Date is required.
@@ -46,6 +46,6 @@
             </div>
         </div>
 
-        <button type="submit" class="btn btn-primary" [disabled]="!editMovieForm.valid">Create Movie</button>
+        <button type="submit" class="btn btn-primary" [disabled]="!editMovieForm.valid">Edit Movie</button>
     </form>
 </div>

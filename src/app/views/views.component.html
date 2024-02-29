@@ -18,17 +18,22 @@
         </ul>
     </div>
     <div class="bg-light flex-fill">
-        <div class="p-2 d-md-none d-flex bg-success">
+        <div class="p-2 d-md-none d-flex bg-primary">
             <a href="#" data-bs-toggle="offcanvas" data-bs-target="#bdSidebar">
                 <i class="fa fa-bars"></i>
             </a>
-            <span class="ms-3">PowerUp – Digital Career</span>
+            <span class="ms-3">Cinema Management System></span>
         </div>
         <div class="p-4 content">
             <div class="text-right">
                 <a routerLink="login" class="no-decoration">Log out</a>
             </div>
             <hr>
+
+            <div class="mb-3">
+                <input type="text" placeholder="Search..." class="search">
+                <button class="btn btn-primary">Search</button>
+            </div>
             <div class="row">
                 <div class="col">
                     <router-outlet></router-outlet>

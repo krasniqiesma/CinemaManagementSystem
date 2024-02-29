@@ -1,5 +1,3 @@
-
-  
 .mynav { 
     color: #fff; 
 } 
@@ -32,4 +30,11 @@
 .content{
     overflow: auto;
     height: 100%;
+}
+
+.search{
+    padding: 7px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid rgb(52, 85, 234);
 }
